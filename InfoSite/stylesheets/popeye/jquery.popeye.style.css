@@ -1,0 +1,137 @@
+/*
+ * jquery.popeye.style.css 2.1
+ *
+ * Example styles for jQuery.popeye
+ *
+ * Copyright (C) 2011 Christoph Schuessler (schreib@herr-schuessler.de)
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ */
+
+/* fallback styles for image list */
+.ppy-imglist {
+    width:          100%;
+    display:        block;
+    overflow:       hidden;
+    
+}
+.ppy-imglist li {
+    padding:        10px;
+    border:         1px solid #f0f0f0;
+    border-radius:          5px;
+    -moz-border-radius:     5px;
+    -khtml-border-radius:   5px;
+    -webkit-border-radius:  5px;
+    background:     #fff;
+    list-style:     none;
+    float:          left;
+    display:        block;
+    margin:         0 10px 10px 0;
+}
+.ppy-imglist li a img {
+    display:        block;
+    border:         0;
+}
+#ppy1 .ppy-extcaption {
+    width:          240px;
+    display:        block;
+}
+#ppy1 .ppy-imglist li {
+    width:          240px;
+    height:         270px;
+}
+#ppy2 .ppy-imglist li,
+#ppy2 .ppy-imglist li a {
+    width:              160px;
+    height:             160px;
+    overflow:           hidden;
+    display:        block;
+}
+/* [END] fallback styles for image list */
+
+
+.ppy.ppy-active {
+    width:          172px;
+}
+
+.ppy .ppy-outer {
+   
+}
+.ppy .ppy-stagewrap {
+    padding:        		5px;
+    border-radius:          5px 0 5px 5px;
+    -moz-border-radius:     5px 0 5px 5px;
+    -webkit-border-radius:  5px 0 5px 5px;
+    background:     		#ffffff; 
+    background:     		rgba(255,255,255,0.7);
+}
+
+/* Width & High of thumbs*/
+.ppy .ppy-stage {
+    width:             		172px;
+    height:            		115px;
+    border:            		2px solid #fff;
+    border-radius:          3px;
+    -moz-border-radius:     3px;
+    -webkit-border-radius:  3px;
+    background-color:       #ffffff;
+    cursor:         		pointer;
+}
+
+.ppy .ppy-loading {
+    background-image:   url(../../images/popeye/loading.gif);
+    background-repeat:  no-repeat;
+    background-position:center;
+}
+
+.ppy .ppy-nav {
+    border-radius:          0 5px 5px 0;
+    -moz-border-radius:     0 5px 5px 0;
+    -webkit-border-radius:  0 5px 5px 0;
+    width:          45px;
+    position:       absolute;
+    top:            0;
+    left:          	0;
+}
+
+.ppy .nav-wrap {
+    padding:        5px 0;
+}
+
+.ppy .ppy-nav a {
+    display:        block;
+    overflow:       hidden;
+    text-indent:    -900em;
+    height:         22px;
+    padding:        5px;
+    border-radius:          0 5px 5px 0;
+    -moz-border-radius:     0 5px 5px 0;
+    -webkit-border-radius:  0 5px 5px 0;
+    width:          30px;
+	opacity:        0.7;
+}
+
+.ppy .ppy-prev {
+    background:     url(../../images/popeye/prev.png) no-repeat center;
+}
+
+.ppy .ppy-next {
+    background:     url(../../images/popeye/next.png) no-repeat center;
+}
+
+.ppy .ppy-switch-enlarge {
+    background:     url(../../images/popeye/enlarge.png) no-repeat center;
+}
+
+.ppy .ppy-switch-compact {
+    background:     url(../../images/popeye/compact.png) no-repeat center;
+}
+
+.ppy .ppy-nav a:hover {
+    cursor:         pointer;
+    opacity:        1;
+}

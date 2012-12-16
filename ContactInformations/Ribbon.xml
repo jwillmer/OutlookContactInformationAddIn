@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <backstage>
+    <tab id="tabContact" label="Visitenkarte" insertAfterMso="TabAccounts" title="Kontaktinformationen" firstColumnMaxWidth="470">
+      <firstColumn>
+        <group id="grpOne" label="Bitte halten Sie Ihre Kontaktinformationen aktuell.">
+          <primaryItem>
+            <button id="btnContactPic" label="Kontaktbild" getImage="GetButtonImage" getEnabled="GetEnable" onAction="btnContactClick" />
+          </primaryItem>
+          <topItems>
+            <layoutContainer id="lytOne" layoutChildren="vertical">
+              <editBox id="edbDisplayName" label="Name" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbFirstName" label="Vorname" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbLastname" label="Nachname" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbPersonalTitle" label="Anrede" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbTitle" label="Titel" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbMail" label="E-Mail-Adresse" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbOfficeName" label="Büroname" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbTelephon" label="Telefonnummer" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbMobile" label="Handynummer" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbFax" label="Faxnummer" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <dropDown id="drpdCountry" 
+                        label="Länderabkürzung" 
+                        getEnabled="GetEnable"
+                        getItemCount="GetItemCount" 
+                        getItemID="GetItemID" 
+                        getItemLabel="GetItemLabel" 
+                        getSelectedItemIndex="GetSelectedItemIndex"
+                        onAction="drpdSelectedItem"
+                        sizeString="WWWWWWWWWWWWWWWWWW"/>
+              <editBox id="edbState" label="Bundesland" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbLocation" label="Lokation" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbPlz" label="Postleitzahl" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbStreet" label="Straße" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <editBox id="edbmanager" label="Vorgesetzter" getEnabled="GetEnable" getText="GetValue" sizeString="WWWWWWWWWWWWWWWWWWWW" onChange="OnChange"/>
+              <layoutContainer id="lytInside" layoutChildren="vertical"  align="bottomRight">
+                <button id="btnUpdate" label=" Aktualisieren" getImage="GetButtonImage" onAction="btnUpdateClick" />
+                <hyperlink id="hyplAuthor" label="©Jens Willmer" target="http://jwillmer.de"/>
+              </layoutContainer>
+            </layoutContainer>
+          </topItems>
+        </group>
+      </firstColumn>
+    </tab>
+  </backstage>
+</customUI>

@@ -1,0 +1,4 @@
+E:\ContactInformations Outlook Add-In v0006 -SP Release\ContactInformations\obj\Release\ContactInformations.csprojResolveAssemblyReference.cache
+E:\ContactInformations Outlook Add-In v0006 -SP Release\ContactInformations\obj\Release\ContactInformations.Properties.CountryCodes.resources
+E:\ContactInformations Outlook Add-In v0006 -SP Release\ContactInformations\obj\Release\ContactInformations.Properties.Resources.resources
+E:\ContactInformations Outlook Add-In v0006 -SP Release\ContactInformations\obj\Release\ContactInformations.csproj.GenerateResource.Cache
