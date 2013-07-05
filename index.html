@@ -1,71 +1,272 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Outlookcontactinformationaddin by jwillmer</title>
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Outlookcontactinformationaddin</h1>
-        <p>This Add-In querys the active directory for the current user information, displays and let the user modifie it.</p>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Outlook Add-In</title>
+	<meta name="description" content="Dieses Add-In ermöglicht Ihnen die Aktualisierung Ihrer Active Directory Einträge aus Outlook heraus.">
+	<meta name="author" content="Jens Willmer">
 
-        <p class="view"><a href="https://github.com/jwillmer/OutlookContactInformationAddIn">View the Project on GitHub <small>jwillmer/OutlookContactInformationAddIn</small></a></p>
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/docs.css">
+	<link rel="stylesheet" href="stylesheets/popeye/jquery.popeye.css" />
+    <link rel="stylesheet" href="stylesheets/popeye/jquery.popeye.style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
 
 
-        <ul>
-          <li><a href="https://github.com/jwillmer/OutlookContactInformationAddIn/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/jwillmer/OutlookContactInformationAddIn/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/jwillmer/OutlookContactInformationAddIn">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	<!-- Primary Page Layout
+	================================================== -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<div class="container">
+		<div class="three columns">
+		&nbsp;
+		</div>
+		
+		<div class="thirteen columns">
+			<header>
+				<h1>Outlook Visitenkarten Add-In</h1>
+			</header>
+			<hr class="large" />
+		</div>
+		
+		
+		<div class="three columns sidebar">
+			<nav>
+				<h4 id="logo">Navigation</h4>
+				&nbsp;
+				<ul>
+					<li><a href="#WasIstDas" onclick="ScrollTo('WasIstDas');">Was ist das?</a></li>
+					<li><a href="#Funktionsweise" onclick="ScrollTo('Funktionsweise');">Funktionsweise</a></li>
+					<li><a href="#Installation" onclick="ScrollTo('Installation');">Installation</a></li>
+					<li><a href="#FragenUndAntworten" onclick="ScrollTo('FragenUndAntworten');">Fragen & Antworten</a></li>
+					<li><a href="#Entwicklung" onclick="ScrollTo('Entwicklung');">Entwicklung</a></li>
+					<li><a href="#Versionsverlauf" onclick="ScrollTo('Versionsverlauf');">Versionsverlauf</a></li>
+					<li><a href="#Kontakt" onclick="ScrollTo('Kontakt');">Kontakt</a></li>
+				</ul>
+			</nav>
+			&nbsp;
+		</div>
+		<div class="thirteen columns content">
+				
+			<div class="doc-section" id="WasIstDas">
+				<h3>Warum und Wieso</h3>
+				<p>Das Outlook Visitenkarten Add-In wurde entwickelt, um Anwendern die Möglichkeit zu bieten, komfortabel ihre, im Active Directory hinterlegten, Informationen zu pflegen und aktuell zu halten.</p>
+				<p>Der Grund für die Entwicklung dieses Add-Ins lag darin, dass in unserem Unternehmen die Soft- und Hardware der Mittarbeiter ausgetauscht wurde. Das Unternehmen migrierte von Windows XP zu Windows 7 und Office 2010.</p> 
+				<p>Die in Office 2010 zur Verfügung stehenden Funktionen zur Kollaboration beziehen die Kontaktinformationen der Anwender aus dem Active Directory. Leider war dieses zum damaligen Zeitpunkt nicht ausreichend gepflegt, wodurch in den Office Produkten nur spärliche Informationen über den eigenen sowie die Firmenkontakte angezeigt wurden.</p>
+				<p>Um diese Informationen schnell und ohne viel Bürokratie einzupflegen, wurde dieses Add-In entwickelt, welches den Anwendern die Möglichkeit bietet, ihre Kontaktinformationen selbst zu pflegen und aktuell zu halten.</p>
+				<p>Die zu bearbeitenden Felder können im Active Directory durch den Administrator eingeschränkt werden. Dadurch behält die IT weiterhin die Kontrolle über die Einträge im Active Directory und kann Anwender- oder Gruppengebundene Rechte für die Bearbeitung der Felder anlegen.
+				<p>Durch die Installation der Anwendung als ClickOnce-Bereitstellung ist die Aktualisierung problemlos und es werden keine erhöhten Anwenderrechte für die Installation benötigt, dadurch wird der Einsatz für einen maximalen Anwenderkreis ermöglicht.</p>
+				<p><strong><del>Das Plugin ist bis jetzt nicht Open-Source, bitte lesen Sie den Hinweis unter Kontakt!</del></strong></p>
+			</div>
+			<hr />
+			
+			<div class="doc-section clearfix" id="Funktionsweise">
+				<h3>Funktionsweise</h3>
+				
+				<div class="row clearfix">
+					<div class="four columns alpha">
+						<div class="ppy">
+							<ul class="ppy-imglist">
+								<li><a href="./images/content/outlook_start.png"><img src="./images/content/outlook_start_thumb.png" alt="Start von Outlook." /></a>
+								</li>
+							</ul>
+							<div class="ppy-outer">
+								<div class="ppy-stage">
+									<div class="ppy-nav">
+										<div class="nav-wrap">
+											<a class="ppy-switch-enlarge" title="Enlarge">Enlarge</a>
+											<a class="ppy-switch-compact" title="Close">Close</a>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nine columns omega">
+						<h5>Start von Outlook</h5>
+						<p>Beim Starten von Outlook meldet sich das Add-In am Active Directoy an. Als Anmeldedaten werden die vom Anwender bei der Anmeldung am System verwendeten Daten benutzt. Nach der erfolgreichen Anmeldung liest das Visitenkarten Add-In die nutzerspezifischen Daten aus dem Active Directory und zeigt diese unter dem Reiter <strong>Datei</strong> im Menüpunkt <strong>Visitenkarte</strong> an.</p>	
+					</div>
+				</div>	
+				
+				<div class="row clearfix">
+					<div class="four columns alpha">
+						<div class="ppy">
+							<ul class="ppy-imglist">
+								<li><a href="./images/content/outlook_add-in.png"><img src="./images/content/outlook_add-in_thumb.png" alt="Start von Outlook." /></a>
+								</li>
+							</ul>
+							<div class="ppy-outer">
+								<div class="ppy-stage">
+									<div class="ppy-nav">
+										<div class="nav-wrap">
+											<a class="ppy-switch-enlarge" title="Enlarge">Enlarge</a>
+											<a class="ppy-switch-compact" title="Close">Close</a>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nine columns omega">
+						<h5>Visitenkarten Reiter</h5>
+						<p>Im Menüpunkt <strong>Visitenkarte</strong> stehen, bei einer erfolgreichen Anmeldung am Active Directory, dem Anwender die für ihn freigegebenen Felder zum Ausfüllen bereit. Felder, die ausgegraut sind, signalisieren fehlende Rechte des Anwenders im Active Directory. Ein Klick auf das Kontaktbild öffnet ein Dialogfenster, in dem sich ein Bild für das Profil auswählen lässt. Um die eingetragenen Daten zu aktualisieren, genügt ein Klick auf <strong>Aktualisieren</strong>.</p>	
+					</div>
+				</div>	
+				
+	
+			</div>
+			<hr />
+			
+			<div class="doc-section clearfix" id="Installation">
+				<h3>Installation</h3>
+				
+				<div class="row clearfix">
+					<div class="four columns alpha">
+						<div class="ppy">
+							<ul class="ppy-imglist">
+								<li><a href="./images/content/outlook_installation.png"><img src="./images/content/outlook_installation_thumb.png" alt="Start von Outlook." /></a>
+								</li>
+							</ul>
+							<div class="ppy-outer">
+								<div class="ppy-stage">
+									<div class="ppy-nav">
+										<div class="nav-wrap">
+											<a class="ppy-switch-enlarge" title="Enlarge">Enlarge</a>
+											<a class="ppy-switch-compact" title="Close">Close</a>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nine columns omega">
+						<h5>Anleitung</h5>
+						<p>Im Transferlaufwerk im Ordner <strong>jwillmer</strong> befindet sich der Ordner <strong>Outlook Add-In</strong> (<em>\\sm00bb04\transfer\jwillmer\Outlook Add-In\</em>). In diesem starten Sie mit einem Klick auf <strong>Visitenkarten Add-In.vsto</strong> die Installation.</p>	
+						<p><strong>Nach der Installation benötigt Outlook einen Neustart um das Add-In zu laden.</strong></p>
+					</div>
+				</div>	
+				
+				
+			</div>
+			<hr />
+			
+			<div class="doc-section clearfix" id="FragenUndAntworten">
+				<h3>Fragen & Antworten</h3>
+				<strong>Wie groß darf mein Profilbild sein?</strong>
+				<p>Ihr Profilbild darf maximal 10 KB groß sein und sollte optimaler Weise genauso hoch wie breit sein.</p>
+				<strong>Alle Felder sind grau, ist das normal?</strong>
+				<p>Möglicherweise haben Sie keine Verbindung zum Active Directory. Das Add-In benutzt ihre Anmeldedaten am PC für die Authentifizierung am Active Directory. Falls Sie lokal angemeldet sind, stimmen diese womöglich nicht überein. Klicken Sie einmal auf <strong>Aktualisieren</strong>. Erscheint daraufhin keine Fehlermeldung, sind Sie erfolgreich verbunden, haben aber keine Berechtigungen zum Ändern der Felder.</p>
+			</div>
+			<hr />
+			
+			<div class="doc-section clearfix" id="Entwicklung">
+				<h3>Entwicklung</h3>
+				<p>Für die weitere Entwicklung ist geplant, dass sich Anwender aus dem Add-In heraus beim Active Directory anmelden können. Dies ist für Anwender wichtig, die sich am lokalen System authentifiziert haben und nicht über das Active Directory.</p>
+			</div>
+			<hr />
+			
+			<div class="doc-section clearfix" id="Versionsverlauf">
+				<h3>Versionsverlauf</h3>
+				&nbsp;
+				<ul class="square">
+					<li>
+						<strong>V1.0.0.0</strong> <em>(06.08.2012)</em>:
+						<ul class="square">
+							<li>Erste Veröffentlichung</li>
+						</ul>
+					</li>
+					<li>
+						<strong>V1.0.0.3</strong> <em>(06.08.2012)</em>:
+						<ul class="square">
+							<li>Aktualisierungsintervall auf 3 Tage gesetzt</li>
+						</ul>
+					</li>
+					<li>
+						<strong>V1.0.0.4</strong> <em>(07.08.2012)</em>:
+						<ul class="square">
+							<li>Fehlermeldungen eingebaut</li>
+							<li>Installationsanleitung erstellt.</li>
+						</ul>
+					</li>
+					<li>
+						<strong>V1.0.0.5</strong> <em>(17.08.2012)</em>:
+						<ul class="square">
+							<li>Neue Felder hinzugefügt</li>
+							<li>Quellcode optimiert</li>
+						</ul>
+					</li>
+					<li>
+						<strong>V1.0.6</strong> <em>(22.08.2012)</em>: 
+						<ul class="square">
+							<li>DropDown Menü für Länderabkürzung hinzugefügt</li>
+							<li>Dokumentation erstellt</li>
+							<li>Quellcode weiter optimiert</li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+			<hr />
+			
+			<div class="doc-section clearfix" id="Kontakt">
+				<h3>Kontakt</h3>
+				<p><strong>Da dieses Plugin privat entwickelt wurde, kann kein Support seitens der IT-Abteilung erwartet werden. Die Installation und Nutzung muss jeder selbst verantworten.</strong></p>
+				<p>Für Verbesserungsvorschläge kann der Autor unter <a href="mailto:info[at}jwillmer.de">info[at}jwillmer.de</a> erreicht werden.</p>
+			</div>
+		</div>
+		
+	</div><!-- container -->
+	
+	<div class="resize"></div>
+	
+		<!-- JS
+		================================================== -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="./js/jquery.popeye-2.1.js"></script>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/jwillmer">jwillmer</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+		<script>
+		    $(document).ready(function () {
+				$('.ppy').popeye();
+			});
+	
+			$('.hidden-code').click(function(e) {
+				e.preventDefault();
+				$(this).children('.gist').slideToggle();
+			})
+			
+			function ScrollTo(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+			}
+		</script>
+		
+<!-- End Document
+================================================== -->
+</body>
 </html>
